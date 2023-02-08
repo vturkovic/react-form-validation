@@ -1,0 +1,27 @@
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form > div {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > input {
+  margin: 5px;
+}
+
+form button {
+  margin: 5px;
+}
+
+.danger {
+  background: #ff7c7c;
+}
