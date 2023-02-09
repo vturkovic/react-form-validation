@@ -41,12 +41,10 @@ const FormComponent = () => {
   
     switch (fieldName) {
       case "name":
-        errorMessage =
-          value.length < 3 ? "Too short": "";
+        errorMessage = value.length < 3 ? "Too short": "";
         break;
       case "surname":
-        errorMessage =
-          value.length < 3 ? "Too short!": "";
+        errorMessage = value.length < 3 ? "Too short!": "";
         break;
       case "dateOfBirth":
         errorMessage = value === "" ? "Required" : "";
