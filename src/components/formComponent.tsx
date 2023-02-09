@@ -15,34 +15,6 @@ const FormComponent = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
-    const newErrors: { [key: string]: string } = {};
-
-    if (!formData.name) {
-      newErrors.name = 'Required';
-    } else if (formData.name.length < 3) {
-      newErrors.name = 'Too Short!';
-    }
-
-    if (!formData.surname) {
-      newErrors.surname = 'Required';
-    } else if (formData.surname.length < 3) {
-      newErrors.surname = 'Too Short!';
-    }
-
-    if (!formData.dateOfBirth) {
-      newErrors.dateOfBirth = 'Required';
-    }
-
-    if (!formData.email) {
-      newErrors.email = 'Required';
-    }
-
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
-    }
-
     alert(JSON.stringify(formData, null, 2));
     setFormData(initalFormState);
     setErrors({});
