@@ -1,10 +1,12 @@
 import './App.css';
+import FormikComponent from './components/formikComponent';
 import FormComponent from './components/formComponent';
 
 const App = () => {
   return (
-    <div>
+    <div className="forms-container">
       <FormComponent />
+      <FormikComponent />
     </div>
   );
 }
